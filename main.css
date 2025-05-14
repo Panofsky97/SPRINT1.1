@@ -103,9 +103,62 @@ nav ul{
         display: flex;
         flex-direction: row;
         gap: 5px;
-        text-wrap: none;
     }
 }
+
+@media (min-width: 1024px){
+
+    body{
+        margin: 2em;
+        width: 100%;
+    }
+    h1{
+        color: rgb(26, 26, 26);
+    }
+    p{
+        color: rgb(95, 95, 95);
+    }
+    .hero{
+        display: flex;
+        align-items: stretch;
+        gap: 2em;
+    }
+    .hero-image{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .hero-image img{
+        max-height: 100%;
+        width: auto;
+    }
+    .hero-left-desktop{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .hero-desktop {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    }
+    
+
+    
+
+
+
+
 
 
 
