@@ -1,6 +1,5 @@
 body{
-    background-color:#fff;
-    margin:0; 
+    background-color:#fff; 
     font-family: 'Inter'; 
 }
 img {
@@ -65,14 +64,47 @@ nav ul{
     transform: translateX(0%);
 }
 
-@media (max-width: 480px ){
+@media (max-width: 480px){
 
     body{
-        margin: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .wrap{
+        margin: 0;
+        padding: 1em;
+    }
+
     a{
         color: white;
-    } 
+        text-decoration: none;
+    }
+    
+    h1, p{
+        text-align: center;
+    }
+
+    nav ul{
+        width: 100%
+    }
+
+    .hero-buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        text-wrap: none;
+    }
 }
 
 
