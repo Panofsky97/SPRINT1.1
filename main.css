@@ -241,6 +241,7 @@ form{
        max-width: 100%;
        display: flex;
        justify-content: center;
+       order:1;
     }
 
     .features-2{
@@ -248,10 +249,12 @@ form{
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        order:2;
     }
 
     .features-2 button{
         display: none;
+        order:3;
     }
 
     .download {
@@ -282,11 +285,17 @@ form{
     }
 
     .card button{
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-top: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        white-space: none;
+    }
+
+    .cards{
+        gap: 2rem;
     }
     
 }
@@ -388,27 +397,32 @@ form{
          width: 300px;
     } 
 
-    .card img{
+    .card-image img{
         width: 60%;
         height: auto;
         display: flex;
         justify-content: center;
     }
 
+    .card img{
+        width: 100%;
+    }
+
     .card button{
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-top: auto;
+        margin-top: 1em;
         white-space: nowrap;
+        margin-bottom: 1em;
     }
 
     .cards{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 5em;
+        gap: 2rem;
 
     }
 
