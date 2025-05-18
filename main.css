@@ -3,16 +3,16 @@ body{
     font-family: 'Inter'; 
 }
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .btn-primary{
-  background-color: #5265E1;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  border: none;
-  font-weight: bold;
+    background-color: #5265E1;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
 }
 
 .btn-secondary{
@@ -26,12 +26,12 @@ img {
 }
 
 .btn-grey{
-  background-color: rgb(210, 208, 208);
-  color: rgb(74, 74, 74);
-  padding: 0.5rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2,0.8);
+    background-color: rgb(210, 208, 208);
+    color: rgb(74, 74, 74);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2,0.8);
 }
 
 .wrap{
@@ -108,6 +108,8 @@ nav ul{
 
 h1,h3{
     color: rgb(28, 28, 28);
+    margin-top: 2em;
+    padding: 0;
 }
 
 p{
@@ -138,12 +140,7 @@ p{
 
 form{
     background: rgb(81, 81, 236);
-}
-
-form p, h3{
-    color: white;
-    margin-top: 2em;
-    padding: 0;
+    
 }
 
 @media (max-width: 480px){
@@ -159,6 +156,10 @@ form p, h3{
          align-items: center;
          text-align: center;
          justify-content: space-around;
+    }
+
+    .left-desktop{
+        order:2;
     }
 
     .hero-image {
@@ -199,6 +200,7 @@ form p, h3{
         gap: 1rem;
         order: 3; 
         flex-direction: row;
+        white-space: nowrap;
     }
 
     h3{
@@ -324,6 +326,7 @@ form p, h3{
         flex-direction: row;
         gap: 1em;
         margin-top: 1em;
+        white-space: nowrap;
     }
     
     h3, p{
@@ -338,9 +341,13 @@ form p, h3{
     }   
 
     .tab .tab-list {
-       display: flex;
-       gap: 1.5rem;
+       list-style: none;
+       display: flex;            
+       flex-direction: row;      
+       gap: 1.5rem;              
        border-bottom: 2px solid #e0e0e0;
+       padding: 0;             
+       margin: 0; 
     }
 
     .tab {
@@ -368,6 +375,41 @@ form p, h3{
        display: flex;
        flex-direction: column;
        justify-content: flex-end;
+    }
+
+    .card{
+         border-radius: 15px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease;
+         padding-top: 2rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 300px;
+    } 
+
+    .card img{
+        width: 60%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card button{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: auto;
+        white-space: nowrap;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5em;
+
     }
 
 }
