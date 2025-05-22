@@ -1,11 +1,11 @@
-  const openBtn   = document.querySelector('.menu-open');
-  const closeBtn  = document.querySelector('.mobile-nav .menu-close');
-  const mobileNav = document.querySelector('.mobile-nav');
+  const menu      = document.querySelector('nav ul.nav-list');
+  const menuBtn = document.querySelector('.menu-open');
+  const closeBtn = document.querySelector('.menu-close');
 
   openBtn.addEventListener('click', () => {
-    mobileNav.classList.add('open');
-  });
+    menu.classList.add('open');
+  })
 
   closeBtn.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-  });
+    menu.classList.remove('open');
+  })
