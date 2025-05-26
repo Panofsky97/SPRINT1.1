@@ -192,15 +192,17 @@ nav ul li:hover {
 
      .features-1 h3{
         color: var(--color-darkest);
+        font-size: 1.5rem;
         margin-bottom: 0;
     }
 
     .features-1 p{
+        max-width: 35ch;  
         line-height: 1.5;
+        font-size: 1rem;
         color: var(--color-grey);
     }
 
-    
     .tabs {
         display: flex;
         flex-direction: column;
@@ -229,6 +231,111 @@ nav ul li:hover {
        color: #1f1f1f;
        border-bottom: 3px solid red;
     }
+
+    .left-features img{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2em 0;
+    }
+
+    .right-features{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .right-features h3{
+        color: var(--color-darkest);
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .right-features p{
+        max-width: 35ch;  
+        line-height: 1.5;
+        font-size: 1rem;
+        color: var(--color-grey);
+    }
+
+    .right-features button{
+        display: none;
+    }
+
+    /*Download Section*/
+
+    .download{
+        margin: 5em 00;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .download-text h3{
+        color: var(--color-darkest);
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .download-text p{
+        max-width: 35ch;  
+        line-height: 1.5;
+        font-size: 1rem;
+        color: var(--color-grey);
+    }
+
+    /*Cards*/
+
+      .card-chrome{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+    }
+
+    .card-firefox{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+    }
+     .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        align-items: flex-start;
+        margin-top: 2rem;
+        margin-bottom:  2rem;
+    }
+
+    .card-opera{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+    }
+
 
 }
 
@@ -279,7 +386,10 @@ nav ul li:hover {
         align-items: start;
         font-size: 0.875rem;
         line-height: 1.2;
+        gap: 1em;
     }
+
+    /*Features Section*/
 
     .features-1{
         display: flex;
@@ -297,6 +407,8 @@ nav ul li:hover {
     }
 
     .features-1 p{
+        max-width: 50ch;          
+        margin: 0 auto;
         line-height: 1.5;
         color: var(--color-grey);
     }
@@ -317,12 +429,12 @@ nav ul li:hover {
        position: relative;
        padding: 0.5rem 0;
        cursor: pointer;
-       color: #777;
+       color: var(--color-grey);
        font-weight: 500;
        transition: color 0.2s;
-       border-top: 2px solid #e0e0e0;
-       margin-bottom: 2px solid #e0e0e0;;
-       border-bottom: 2px solid #e0e0e0;
+       border-top: 2px solid var(--color-grey-lightest);
+       margin-bottom: 2px solid var(--color-grey-lightest);
+       border-bottom: 2px solid var(--color-grey-lightest);
        margin-bottom: 2rem;
     }
 
@@ -360,12 +472,198 @@ nav ul li:hover {
         margin-bottom: 0;
         font-size: 1.5rem;   
         line-height: 1.33;
+        margin-bottom: 0.5em;
     }
 
     .features-1 p{
         line-height: 1.5;
         color: var(--color-grey);
+        margin-bottom: 2em;
     }
+
+    .right-features h3{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1.5rem;   
+        line-height: 1.33;
+        margin-bottom: 0;
+    }
+
+    .right-features p{
+        color: var(--color-grey);
+        line-height: 1.5;
+        max-width: 40ch;
+    }
+
+    .features-left{
+        display: flex; 
+        align-items: start;
+        justify-content: center;
+    }
+
+    .features-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        gap: 5em;
+    }
+
+    /*Download section*/
+
+    .download-text h3{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1.5rem;   
+        line-height: 1.33;
+    }
+
+    .download-text p{
+        color: var(--color-grey);
+        line-height: 1.5;
+        max-width: 53ch;
+    }
+
+    .download-text {
+        margin: 5em 0;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*Cards*/
+
+    .card-title{
+        font-size: 1.25rem;
+        color: var(--color-darkest);
+    }
+
+    .card-text{
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: var(--color-grey);
+    }
+
+    .cards button{
+        font-size: 0.875rem;
+    }
+
+    .card-chrome{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+        transform: translateY(0)
+    }
+
+    .card-firefox{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+        transform: translateY(20%)
+    }
+
+    .card-opera{
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem 3rem;
+        text-align: center;
+        position: relative;
+        max-width: 300px;
+        flex: 1;
+        transition: transform 0.3s ease;
+        transform: translateY(40%);
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        align-items: flex-start;
+        margin-top: 2em;
+        margin-bottom:  2em;
+    }
+    
+    .bg-dots{
+        margin-bottom: 1em;
+    }
+
+    /*FAQ Section*/
+
+    .faq-text{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20em;
+    }
+
+    .faq-text h3{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1.5rem;   
+        line-height: 1.33;
+    }
+
+    .faq-text p{
+        max-width: 50ch;          
+        margin: 0 auto;
+        line-height: 1.5;
+        color: var(--color-grey);
+    }
+
+    .faqs h4{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1rem;   
+        line-height: 1.33;
+    }
+
+    .faqs summary{
+        display: flex;
+        justify-content: center ;
+    }
+
+    .faq-question{
+        list-style: none;
+        display: flex;               
+        justify-content: center;
+        text-align: start;
+        padding: 1rem 0;   
+        border-bottom: 1px solid #e0e0e0;   
+    }
+
+   
+
+
+
+
+
+    
+
+
+    
+
+
+
+
 
 }
 
