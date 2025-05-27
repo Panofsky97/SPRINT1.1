@@ -367,29 +367,12 @@ nav ul li:hover {
     }
 
     .faqs{
+        list-style: none;
         width: 60%;
         display: flex;
         justify-content: center;
-        align-items: center;
-
-        
-    }
-
-    .faq-question{
-        list-style: none;
-        display: flex;               
-        justify-content: center;
-        text-align: start;
-        padding: 1rem 0;   
-        border-bottom: 1px solid #e0e0e0;   
-    }
-
-    .asks{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: space-between;
-        gap: 2em;
+        align-items: center; 
+        flex-flow: column nowrap;       
     }
 
      .faqs h4{
@@ -399,27 +382,44 @@ nav ul li:hover {
         line-height: 1.33;
     }
 
-    .ask details{
-        display: flex;
-        flex-direction: column;
+    .faq-question{
+        list-style: none;
+        display: flex;              
         justify-content: center;
+        align-items: center;
+        text-align: start;
+        padding: 1rem 0;  
+        border-bottom: 1px solid var(--color-grey-lightest);   
     }
 
-    .faqs .btn-primary{
-        display: none;
-    }
-
-    .ask details{
+    .asks {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
         list-style: none;
     }
 
-    .ask p{
-        max-width: 35ch; 
+    .faq-arrow{
         display: flex;
-        text-align: start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqs button{
+        display: none;
+    }
+
+    .ask p{
+        max-width: 50ch; 
+        display: flex;
+        text-align: center;
         align-items: center;
         color: var(--color-grey);
+        line-height: 1.5;
     }
+
+    /*Formulary Section*/
 
     .form-text {
         width: 100%;
@@ -756,7 +756,6 @@ nav ul li:hover {
         align-items: center;
         text-align: start;
         padding: 1rem 0;  
-        border-top: 1px solid var(--color-grey-lightest); 
         border-bottom: 1px solid var(--color-grey-lightest);   
     }
 
@@ -791,9 +790,10 @@ nav ul li:hover {
 
     /*Formulary section*/
 
-
     .form-text {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         margin-top: 2em;
         background: var(--primary);
         align-items: center;
@@ -808,6 +808,12 @@ nav ul li:hover {
     .form-text p{
         color: var(--color-white)   ;
         font-size: 0.875rem;
+    }
+
+    .formulary{
+        background: var(--primary);
+        align-items: center;
+        justify-content: center;
     }
 }
 
