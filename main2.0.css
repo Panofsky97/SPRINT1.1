@@ -113,6 +113,7 @@ nav ul li:hover {
 }
 
 @media (max-width: 480px){
+
     header {
           display: flex;
           flex-wrap: wrap;
@@ -290,7 +291,7 @@ nav ul li:hover {
 
     /*Cards*/
 
-      .card-chrome{
+    .card-chrome{
         background: #fff;
         border-radius: 12px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -336,6 +337,108 @@ nav ul li:hover {
         transition: transform 0.3s ease;
     }
 
+    .bg-dots{
+        margin-bottom: 1em;
+    }
+
+    /*FAQs Section*/
+
+    .faq-text{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20em;
+    }
+
+    .faq-text h3{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1.5rem;   
+        line-height: 1.33;
+        margin-bottom: 0.75em;
+    }
+
+    .faq-text p{
+        max-width: 50ch;          
+        margin: 0 auto;
+        line-height: 1.5;
+        color: var(--color-grey);
+    }
+
+    .faqs{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .faq-question{
+        list-style: none;
+        display: flex;               
+        justify-content: center;
+        text-align: start;
+        padding: 1rem 0;   
+        border-bottom: 1px solid #e0e0e0;   
+    }
+
+    .asks{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+     .faqs h4{
+        color: var(--color-darkest);
+        margin-bottom: 0;
+        font-size: 1rem;   
+        line-height: 1.33;
+    }
+
+    .ask details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .faqs .btn-primary{
+        display: none;
+    }
+
+    .ask details{
+        list-style: none;
+    }
+
+    .ask p{
+        max-width: 35ch; 
+        display: flex;
+        text-align: start;
+        align-items: center;
+        color: var(--color-grey);
+    }
+
+    .form-text {
+        width: 100%;
+        margin-top: 2em;
+        background: var(--primary);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-text h3{
+        color: var(--color-white);
+        font-size: 1.75rem;
+    }
+
+    .form-text p{
+        color: var(--color-white)   ;
+        font-size: 0.875rem;
+    }
+
 
 }
 
@@ -369,6 +472,7 @@ nav ul li:hover {
         font-size: 1rem;
         line-height: 1.5;
         color: var(--color-grey);
+        line-height: 1.5;
     }
 
     .hero img{
@@ -620,6 +724,7 @@ nav ul li:hover {
         margin-bottom: 0;
         font-size: 1.5rem;   
         line-height: 1.33;
+        margin-bottom: 0.75em;
     }
 
     .faq-text p{
@@ -629,6 +734,14 @@ nav ul li:hover {
         color: var(--color-grey);
     }
 
+    .faqs{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .faqs h4{
         color: var(--color-darkest);
         margin-bottom: 0;
@@ -636,35 +749,66 @@ nav ul li:hover {
         line-height: 1.33;
     }
 
-    .faqs summary{
-        display: flex;
-        justify-content: center ;
-    }
-
     .faq-question{
         list-style: none;
-        display: flex;               
+        display: flex;              
         justify-content: center;
+        align-items: center;
         text-align: start;
-        padding: 1rem 0;   
-        border-bottom: 1px solid #e0e0e0;   
+        padding: 1rem 0;  
+        border-top: 1px solid var(--color-grey-lightest); 
+        border-bottom: 1px solid var(--color-grey-lightest);   
     }
 
-   
+    .asks {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .faq-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqs button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ask p{
+        max-width: 50ch; 
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: var(--color-grey);
+        line-height: 1.5;
+    }
+
+    /*Formulary section*/
 
 
+    .form-text {
+        width: 100%;
+        margin-top: 2em;
+        background: var(--primary);
+        align-items: center;
+        justify-content: center;
+    }
 
+    .form-text h3{
+        color: var(--color-white);
+        font-size: 1.75rem;
+    }
 
-
-    
-
-
-    
-
-
-
-
-
+    .form-text p{
+        color: var(--color-white)   ;
+        font-size: 0.875rem;
+    }
 }
 
 
