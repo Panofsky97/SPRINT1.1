@@ -25,6 +25,7 @@
 
 body{
     background: var(--color-white);
+    margin: auto;
     font-family: 'Inter';
 }
 
@@ -113,6 +114,10 @@ nav ul li:hover {
 }
 
 @media (max-width: 480px){
+
+    .wrap{
+        margin: 0 10%;
+    }
 
     header {
           display: flex;
@@ -319,7 +324,7 @@ nav ul li:hover {
         justify-content: center;
         flex-direction: column;
         align-items: flex-start;
-        gap: 1em;
+        gap: 3em;
         align-items: flex-start;
         margin-top: 2rem;
         margin-bottom:  2rem;
@@ -359,13 +364,6 @@ nav ul li:hover {
         margin-bottom: 0.75em;
     }
 
-    .faq-text p{
-        max-width: 50ch;          
-        margin: 0 auto;
-        line-height: 1.5;
-        color: var(--color-grey);
-    }
-
     .faqs{
         list-style: none;
         width: 60%;
@@ -378,68 +376,92 @@ nav ul li:hover {
      .faqs h4{
         color: var(--color-darkest);
         margin-bottom: 0;
-        font-size: 1rem;   
+        font-size: 1.5rem;   
         line-height: 1.33;
+        max-height: 20ch;
     }
 
-    .faq-question{
+    .faq details summary {
+        max-width: 500px;
         list-style: none;
-        display: flex;              
-        justify-content: center;
-        align-items: center;
-        text-align: start;
-        padding: 1rem 0;  
-        border-bottom: 1px solid var(--color-grey-lightest);   
-    }
-
-    .asks {
-        display: flex;
-        flex-direction: row;
-        align-items:center;
+        cursor: pointer;
+        display: flex;               
         justify-content: space-between;
-        list-style: none;
-    }
-
-    .faq-arrow{
-        display: flex;
-        justify-content: center;
         align-items: center;
+        padding: 1rem 0;   
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+        margin:0 auto;
+        padding: 0 1.5rem; 
     }
-
-    .faqs button{
-        display: none;
-    }
-
-    .ask p{
-        max-width: 50ch; 
-        display: flex;
-        text-align: center;
-        align-items: center;
-        color: var(--color-grey);
+    .faq .ask h4{
+        font-size: 1rem;
         line-height: 1.5;
+        color: var(--color-darkest);
+    }
+     .faq .ask  p{
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem 0 1.5rem;
+        color: var(--color-grey)
+    }
+
+    .info-btn{
+        display: none;
     }
 
     /*Formulary Section*/
 
+    form{
+        background: var(--primary);
+        margin-top: 5em 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .form-text {
-        width: 100%;
-        margin-top: 2em;
+        width: 100;
+        display: flex;
+        flex-direction: column;
         background: var(--primary);
         align-items: center;
         justify-content: center;
+        margin-top: 2.75em;
     }
 
     .form-text h3{
+        display: flex;
         color: var(--color-white);
         font-size: 1.75rem;
+        text-align: center;
     }
 
     .form-text p{
+        letter-spacing: 0.10em;
         color: var(--color-white)   ;
         font-size: 0.875rem;
+        line-height: 1.2;
+    }
+    .formulary{
+        display: flex;
+        background: var(--primary);
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4em;
+        gap: 0.875rem;
     }
 
+    #email{
+        padding: 0.75rem 2rem;
+        border-radius: 5px;
+        border: none;
+        gap: 1em;
+    }
 
+    .formulary button{
+        padding: 0.75rem 2rem;
+    }
 }
 
 @media (min-width: 480px){
@@ -717,6 +739,7 @@ nav ul li:hover {
         justify-content: center;
         flex-direction: column;
         margin-top: 20em;
+        margin-bottom: 2em;
     }
 
     .faq-text h3{
@@ -727,94 +750,132 @@ nav ul li:hover {
         margin-bottom: 0.75em;
     }
 
-    .faq-text p{
+    .faq p{
         max-width: 50ch;          
         margin: 0 auto;
         line-height: 1.5;
         color: var(--color-grey);
     }
 
-    .faqs{
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .faqs h4{
-        color: var(--color-darkest);
-        margin-bottom: 0;
-        font-size: 1rem;   
-        line-height: 1.33;
-    }
-
-    .faq-question{
+    .faq details summary {
+        max-width: 500px;
         list-style: none;
-        display: flex;              
-        justify-content: center;
-        align-items: center;
-        text-align: start;
-        padding: 1rem 0;  
-        border-bottom: 1px solid var(--color-grey-lightest);   
-    }
-
-    .asks {
-        display: flex;
-        flex-direction: row;
-        align-items:center;
+        cursor: pointer;
+        display: flex;               
         justify-content: space-between;
-        list-style: none;
+        align-items: center;
+        padding: 1rem 0;   
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+        margin:0 auto;
+        padding: 0 1.5rem; 
     }
 
-    .faq-arrow{
+    .faq p{
+        max-width: 50ch;
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-
-    .faqs button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ask p{
-        max-width: 50ch; 
-        display: flex;
-        text-align: center;
         align-items: center;
         color: var(--color-grey);
+        text-align: center;
         line-height: 1.5;
     }
 
+    .faq h4{
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--color-darkest);
+        margin-bottom: 1em;
+    }
+
+    .faq .ask  p{
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem 0 1.5rem;
+        color: var(--color-grey)
+    }
+
+    .info-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+        line-height: 1.2;
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+
+
     /*Formulary section*/
+
+    form{
+        background: var(--primary);
+        margin-top: 5em 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .form-text {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 2em;
         background: var(--primary);
         align-items: center;
         justify-content: center;
+        margin-top: 2.75em;
     }
 
     .form-text h3{
+        display: flex;
         color: var(--color-white);
         font-size: 1.75rem;
+        text-align: center;
     }
 
     .form-text p{
+        letter-spacing: 0.10em;
         color: var(--color-white)   ;
         font-size: 0.875rem;
+        line-height: 1.2;
     }
-
     .formulary{
+        display: flex;
         background: var(--primary);
         align-items: center;
         justify-content: center;
+        margin-bottom: 4em;
+        gap: 0.875rem;
     }
+
+    #email{
+        padding: 0.75rem 2rem;
+        border-radius: 5px;
+        border: none;
+        gap: 1em;
+    }
+
+    .formulary button{
+        padding: 0.75rem 2rem;
+    }
+
+    /*Navbar 2*/
+
+    .navbar2{
+        background-color: var(--color-navy);
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+        margin 2em 0;
+        
+    }
+    .nav2-links{
+        color: white;
+        font-size: 0.875;
+
+
+    }
+    
 }
 
 
