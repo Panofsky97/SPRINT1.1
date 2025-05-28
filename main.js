@@ -4,7 +4,7 @@
 
  }  
   
-  const menu      = document.querySelector('nav ul.nav-list');
+  const menu      = document.querySelector('nav ul');
   const menuBtn   = document.querySelector('.menu-open');
   const closeBtn  = document.querySelector('.menu-close');
 
