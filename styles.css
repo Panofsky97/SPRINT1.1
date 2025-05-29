@@ -66,6 +66,10 @@ nav ul{
     }
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .btn-primary{
     background-color: var(--primary);
     color: white;
@@ -98,6 +102,7 @@ nav ul{
 
     .wrap{
         margin: 0;
+        width: auto;
     }
 
     #hamburger-icon{
@@ -113,6 +118,7 @@ nav ul{
         height: auto;
         width: 100%;
         transform: translateX(100%);
+        transition: 0.4s ease-in-out;
     }
 
     .nav-list{
@@ -144,6 +150,10 @@ nav ul{
 
     }
 
+    .open{
+        transform: translateX(0%);
+    }
+
     header {
           display: flex;
           flex-wrap: wrap;
@@ -154,9 +164,7 @@ nav ul{
     }
 
     body{
-          margin: 0;
-          padding: 0 1em;
-          width: 100%;
+          margin: 2em 0;
           max-width: 100%;
     }
 
@@ -219,6 +227,7 @@ nav ul{
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
      .features-1 h3{
@@ -228,6 +237,8 @@ nav ul{
     }
 
     .features-1 p{
+        display: flex;
+        align-items: center;
         max-width: 35ch;  
         line-height: 1.5;
         font-size: 1rem;
@@ -278,6 +289,7 @@ nav ul{
         text-align: center;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
 
     .right-features h3{
@@ -300,11 +312,12 @@ nav ul{
     /*Download Section*/
 
     .download{
-        margin: 5em 0;
+        margin: 2em 0;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
     }
     .download-text h3{
         color: var(--color-darkest);
@@ -327,10 +340,8 @@ nav ul{
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         padding: 2rem 1.5rem 3rem;
         text-align: center;
-        position: relative;
         max-width: 300px;
         flex: 1;
-        transition: transform 0.3s ease;
     }
 
     .cards p{
@@ -343,18 +354,15 @@ nav ul{
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         padding: 2rem 1.5rem 3rem;
         text-align: center;
-        position: relative;
         max-width: 300px;
         flex: 1;
-        transition: transform 0.3s ease;
     }
      .cards{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 3em;
-        align-items: flex-start;
         margin-top: 2rem;
         margin-bottom:  2rem;
     }
@@ -365,13 +373,14 @@ nav ul{
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         padding: 2rem 1.5rem 3rem;
         text-align: center;
-        position: relative;
         max-width: 300px;
         flex: 1;
-        transition: transform 0.3s ease;
+        margin-left: 6%;
     }
 
     .bg-dots{
+        display: flex;
+        align-items: center;
         margin-bottom: 1em;
     }
 
@@ -383,6 +392,7 @@ nav ul{
         justify-content: center;
         flex-direction: column;
         margin-top: 2em;
+        margin-bottom: 2em;
     }
 
     .faq-text h3{
@@ -421,7 +431,6 @@ nav ul{
         border-bottom: 1px solid #e0e0e0;
         border-top: 1px solid #e0e0e0;
         margin:0 auto;
-        margin-bottom: 3em;
         padding: 0 1.5rem; 
     }
 
@@ -442,17 +451,18 @@ nav ul{
     .info-btn{
         display: flex;
         align-items: center;
-        width: 100%;
         justify-content: center;
         font-size: 0.875rem;
+        line-height: 1.2;
+        margin-top: 2em;
         margin-bottom: 5em;
     }
 
     /*Formulary Section*/
 
-    .newsletter{
+    .newsletter {
         background: var(--primary);
-        margin-top: 5em 0;
+        margin: 2em 0;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -522,6 +532,7 @@ nav ul{
         }
     }
 
+
     .left-nav{
         background-color: var(--color-navy);
         display: flex;
@@ -529,6 +540,20 @@ nav ul{
         justify-content: center;
         margin: 2em 0;
         align-items: center;
+
+        a{
+            color: var(--color-white);
+            font-size: 0.7rem;
+            text-decoration: none;
+            margin: 0.5em 0;
+        }
+    }
+
+    .navbar2 ul li a {
+         color: #fff;
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 0.95rem;
     }
 
     .footer-social{
@@ -547,6 +572,16 @@ nav ul{
         margin: 0;
     }
 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: auto;
+        margin: 3em auto;
+
+    }
+
     body{
         padding: 0;
     }
@@ -563,6 +598,7 @@ nav ul{
         justify-content: center;
         flex: 1;
         width: 100%;
+        margin-left: 3em;
     }
 
     .hero{
@@ -595,7 +631,7 @@ nav ul{
         align-items: center;
         justify-content: center;
         flex: 1;
-        width: 100%;
+        max-width: auto;
         max-width: 600px;
     }
 
@@ -881,6 +917,10 @@ nav ul{
         line-height: 1.5;
         color: var(--color-darkest);
         margin-bottom: 1em;
+
+        &:hover{
+            color: var(--secondary);
+        }
     }
 
     .faq .ask  p{
@@ -961,28 +1001,47 @@ nav ul{
 
     /*Navbar 2*/
 
-    .left-nav{
+    .navbar2{
         background-color: var(--color-navy);
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
-        gap: 3em;
-        
+        padding-top: 2em;
+        width: 100%;
+        padding: 1em 0;
+        width: 100%;
+
         a{
             color: var(--color-white);
             font-size: 0.7rem;
             text-decoration: none;
+            margin: 0.5em 1em;
         }
-        
+
+        &:hover{
+            background-color: var(--secondary);
+        }
+    }
+
+    .left-nav{
+        background-color: var(--color-navy);
+        display: flex;
+        flex-direction: row;
+        gap: 3em;
+        margin-left: 5em;
     }
 
     #social-icons{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
+        gap: 2em;
+        padding-right: 0 2em;
+        margin-right: 5em;
+
+        a &:hover{
+            color: var(--secondary);
+        }
     }
 
     
