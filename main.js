@@ -4,14 +4,15 @@
 
  }  
   
-  const menu      = document.querySelector('nav ul');
-  const menuBtn   = document.querySelector('.menu-open');
-  const closeBtn  = document.querySelector('.menu-close');
+const hamburger = document.getElementById('hamburger-icon');
+const navList = document.querySelector('.nav-list');
+const closeBtn = document.querySelector('.menu-close');
 
-  openBtn.addEventListener('click', () => {
-    menu.classList.add('open');
-  })
+hamburger.addEventListener('click', () => {
+  navList.classList.add('open');
+});
 
-  closeBtn.addEventListener('click', () => {
-    menu.classList.remove('open');
-  })
+closeBtn.addEventListener('click', (e) => {
+  e.preventDefault(); 
+  navList.classList.remove('open');
+});

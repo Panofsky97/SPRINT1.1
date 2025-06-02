@@ -8,28 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="reset" href="reset.css">
+    
 </head>
 <body>
-    <section class="wrap">
+    <div class="wrap">
     <header>
+        <div class="navbar1">
         <div class="header-left">
             <a href="#">
                 <img src="img/logo-bookmark.svg" alt="Bookmark Logo">
             </a>
+        </div>
         </div>
         <nav>
             <div class="header-right">
                 <div class="menu-open">
                     <img src="img/icon-hamburger.svg" id="hamburger-icon" alt="Open Menu">
                 <ul class="nav-list">
+                    <li>
                     <a href="#" class="menu-close">
                         <img src="img/icon-close.svg" alt="Close Menu">
                     </a>
-                    <li><a href="#">FEATURES</a></li>
+                    </li>
+                    <li><a href="#features">FEATURES</a></li>
                     <li><a href="#">PRICING</a></li>
                     <li><a href="#">CONTACT</a></li>
                     <li>
-                        <button href="#" class="btn-secondary">LOGIN</button>
+                        <a href="#" class="btn-secondary" id="login-btn">LOGIN</a>
                     </li>
                 </ul>
                 </div>
@@ -42,7 +48,7 @@
                 <h1>A Simple Bookmark Manager</h1>
                 <p>
                     A clean and simple interface to organiza your favourite websites.
-                    Open a new browser tab and see your sites load instantly.Try it for free.
+                    Open a new browser tab and see your sites load instantly. Try it for free.
 
                 </p>
                 <div class="hero-buttons">
@@ -54,7 +60,7 @@
                 <img src="img/illustration-hero.svg" alt="Hero Image">
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="features-1">
                 <h3>Features</h3>
                 <p>
@@ -135,31 +141,31 @@
             <div class="questions">
              <details class="faq-question">
                 <summary class="ask">
-                    <div><h4>What is Bookmark?</h4></div>
-                    <div><img src="img/icon-arrow.svg" alt="icon-arrow"></div>
+                    <h4>What is Bookmark?</h4>
+                    <img src="img/icon-arrow.svg" alt="icon-arrow">
                     </summary>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dis neque, sollicitudin justo diam sociosqu et facilisi fames vivamus, placerat felis dapibus rutrum class sed montes aliquam.</p>
             </details>
 
             <details class="faq-question">
                 <summary class="ask">
-                    <div><h4>How can I request a new browser?</h4></div>
-                    <div><img src="img/icon-arrow.svg" alt="icon-arrow"></div>
+                    <h4>How can I request a new browser?</h4>
+                    <img src="img/icon-arrow.svg" alt="icon-arrow">
                     </summary>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dis neque, sollicitudin justo diam sociosqu et facilisi fames vivamus, placerat felis dapibus rutrum class sed montes aliquam.</p>
             </details>
             <details class="faq-question">
                 <summary class="ask">
-                    <div><h4>Is there a mobile app?</h4></div>
-                    <div><img src="img/icon-arrow.svg" alt="icon-arrow"></div>
+                    <h4>Is there a mobile app?</h4>
+                    <img src="img/icon-arrow.svg" alt="icon-arrow">
                     </summary>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dis neque, sollicitudin justo diam sociosqu et facilisi fames vivamus, placerat felis dapibus rutrum class sed montes aliquam.</p>
             </details>
 
             <details class="faq-question">
                 <summary class="ask">
-                    <div><h4>What about other Chromium browsers?</h4></div>
-                    <div><img src="img/icon-arrow.svg" alt="icon-arrow"></div>
+                    <h4>What about other Chromium browsers?</h4>
+                    <img src="img/icon-arrow.svg" alt="icon-arrow">
                     </summary>
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit dis neque, sollicitudin justo diam sociosqu et facilisi fames vivamus, placerat felis dapibus rutrum class sed montes aliquam.</p>
             </details>
@@ -167,13 +173,13 @@
             <div class="info-btn"><button class="btn-primary">More Info</button></div>
         </section>
     </main>
-    </section>
+    </div>
     <footer>
         <form action="#">
             <div class="newsletter">
                 <div class="form-text">
                     <p>35.000+ ALREADY JOINED</p>
-                    <h3>Stay up-to-date with what we're doing</h3>
+                    <h3>Stay up-to-date with what <br> we're doing</h3>
                 </div>
                 <div class="formulary">
                     <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -181,17 +187,19 @@
                 </div>
             </div>
         </form>
-        <nav class="navbar2">
-            <div class="left-nav">
-            <a href="index.html" class="footer-logo">
-                 <img src="img/logo-bookmark.svg" alt="Bookmark Logo">
-            </a>
-             <ul>
+        <nav>
+            <div class="navbar2">
+             <ul class="nav-list2">
+                <li>
+                    <a href="#" class="footer-logo">
+                        <img src="img/logo-bookmark.svg" alt="Bookmark Logo">
+                    </a>
+                </li>
                 <li><a href="#">FEATURES</a></li>
                 <li><a href="#">PRICING</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-            </div>
+
             <div class="footer-social" id="social-icons">
                 <a href="#">
                    <img src="img/icon-facebook.svg" alt="Facebook">
@@ -200,9 +208,9 @@
                    <img src="img/icon-twitter.svg" alt="Twitter">
                 </a>
             </div>
+            </div>
         </nav>
     </footer> 
-
     <script src="main.js"></script>
 </body>
 </html>
