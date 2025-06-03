@@ -36,7 +36,6 @@ body{
     justify-content: space-between;
     padding: 0 1em; 
     max-width: 100%;
-    margin: 3em;
 }
 
 nav ul{
@@ -205,7 +204,6 @@ html, body {
         display: flex;
         justify-content: center;
         flex-direction: column; 
-        
         width: 100%;
         color: var(--color-white);
         transform: translateX(100%);
@@ -259,10 +257,11 @@ html, body {
     /*Hero Section*/
     
     .hero{
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        margin: 2em 0;       
+        margin: 0;       
     }
     
     .hero img{
@@ -281,6 +280,17 @@ html, body {
         order: 2;
         flex-direction: column;
         margin: 0;
+    }
+
+     .rectangle{
+        position: absolute;
+        width: 65%;
+        height: 35%;
+        background-color: var(--primary);
+        border-radius: 40% 0 0 40%;
+        right: 0;
+        top: 7.5em;
+        z-index: -1;
     }
 
     .hero-buttons{
@@ -375,6 +385,10 @@ html, body {
        border-bottom: 3px solid red;
     }
 
+    .features-2{
+        position: relative;
+    }
+
     .left-features img{
         max-width: 100%;
         height: auto;
@@ -383,6 +397,17 @@ html, body {
         align-items: center;
         justify-content: center;
         margin: 2em 0;
+    }
+
+    .rectangle-2 {
+        position: absolute;
+        width: 75%;
+        height: 45%;
+        background-color: var(--primary);
+        border-radius: 0 50% 50% 0;
+        left: 0;
+        top: 5.5rem;
+        z-index: -1;
     }
 
     .right-features{
@@ -689,9 +714,10 @@ html, body {
     header{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        gap: 26em;
         background-color: none;
         flex-flow: nowrap;
     }
@@ -760,14 +786,15 @@ html, body {
     }
 
     .hero{
+        position: relative;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         gap: 3rem;              
-        margin: 2em auto;       
-        max-width: 1200px;
-        padding: 0; 
+        margin:0;       
+        max-width: 100%;
+        padding: 0 8em; 
     }
     .hero h1{
         font-size: 2rem;
@@ -792,6 +819,17 @@ html, body {
         flex: 1;
         max-width: auto;
         max-width: 600px;
+    }
+
+    .rectangle{
+        position: absolute;
+        width: 35%;
+        height: 65%;
+        background-color: var(--primary);
+        border-radius: 40% 0 0 40%;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
 
     .hero-buttons{
@@ -942,12 +980,24 @@ html, body {
     }
 
     .features-2{
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: start;
         margin-top: 3em;
         gap: 5em;
+    }
+
+    .rectangle-2 {
+        position: absolute;
+        width: 40%;
+        height: 75%;
+        background-color: var(--primary);
+        border-radius: 0 50% 50% 0;
+        left: 0;
+        bottom: 0em;
+        z-index: -1;
     }
 
     /*Download section*/
